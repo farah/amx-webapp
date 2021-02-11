@@ -1,0 +1,37 @@
+.collect-input input {
+  display: block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 4px;
+  color: #32325d;
+  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  padding: 5px 20px 8px 0;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+.collect-input input {
+  background-image: url(https://storage.cloud.google.com/amx-assets/assets/img/v3/validation-error.svg);
+  background-repeat: no-repeat;
+  background-position-x: -5000px;
+  background-position-y: 9px;
+  background-size: 20px 20px;
+
+  &:focus {
+    color: #8898aa !important;
+    box-shadow: 0 0 0 1px #e4effa;
+    background-position-x: -5000px !important;
+  }
+}
+
+.collect-input input.invalid-value {
+  box-shadow: 0 0 0 1px #ffa27b;
+  background-position-x: calc(100% - 16px);
+  background-position-y: 9px;
+  box-shadow: 0 0 0 1px #fff;
+  color: #ffa27b !important;
+}

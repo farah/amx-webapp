@@ -1,0 +1,73 @@
+.firebaseui-idp-text.firebaseui-idp-text-long {
+  display: table-cell;
+}
+
+.firebaseui-idp-text {
+  color: #fff;
+  display: table-cell;
+  font-size: 14px;
+  padding-left: 16px;
+  font: 500 0.875rem/2.25rem "Roboto", sans-serif;
+  vertical-align: middle;
+}
+
+.firebaseui-idp-button {
+  direction: ltr;
+  font-weight: 500;
+  height: auto;
+  line-height: normal;
+  //max-width: 220px;
+  min-height: 40px;
+  padding: 8px 16px;
+  text-align: left;
+  width: 100%;
+  margin-top: 10px !important;
+}
+
+.mdl-button {
+  background: 0 0;
+  border: none;
+
+  border-radius: 2px;
+  color: #000;
+  position: relative;
+  height: 56px;
+  margin: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  display: inline-block;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0;
+  overflow: hidden;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+.firebaseui-idp-text.firebaseui-idp-text-short {
+  display: none;
+}
+
+.firebaseui-idp-icon-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.firebaseui-idp-icon {
+  border: none;
+  display: inline-block;
+  height: 22px;
+  vertical-align: middle;
+  width: 22px;
+}

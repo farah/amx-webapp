@@ -1,0 +1,71 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "jsx-max-props-per-line": [
+          1,
+          {
+            "maximum": "1",
+            "when": "always"
+          }
+        ]
+      }
+    ],
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "maximum": "1",
+        "when": "always"
+      }
+    ],
+    "ordered-imports": false,
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape",
+      "avoid-template",
+      "jsx-double"
+    ],
+    "semicolon": [
+      false,
+      "never"
+    ],
+    "arrow-parens": false,
+    "trailing-comma": false,
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "no-unnecessary-initializer": false,
+    "variable-name": false,
+    "eofline": false,
+    "max-classes-per-file": false,
+    "member-access": false,
+    "member-ordering": false,
+    "import-name": false,
+    "max-line-length": [
+      true,
+      {
+        "limit": 120,
+        "ignore-pattern": "^import |^export {(.*?)}",
+        "check-strings": true,
+        "check-regex": true
+      }
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "scripts/**/*.js",
+      "node_modules/**/*.ts",
+
+    ]
+  },
+  "rulesDirectory": []
+}

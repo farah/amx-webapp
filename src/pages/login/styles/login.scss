@@ -1,0 +1,96 @@
+.db-LoginAsHeader {
+    height: 48px;
+    flex-grow: 1
+}
+
+.db-LoginAsHeader--fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 98
+}
+
+.db-LoginAsHeader-inner {
+    flex-grow: 1
+}
+
+@media print {
+    .db-LoginAsHeader {
+        display: none
+    }
+}
+.db-LoginAsHeader+.db-ManageGraphiQL {
+    height: calc(100% - 48px);
+    margin-top: 48px
+}
+
+.db-Login-root {
+    background: #fff;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden
+}
+
+.db-Login-fields {
+    width: 100%
+}
+
+.db-Login-recoverFields {
+    margin-left: -20px;
+    margin-right: -20px
+}
+
+.db-Login-fieldLabel--clickable {
+    cursor: pointer
+}
+
+.db-Login-forgotConfirmIcon {
+    border-radius: 50%
+}
+
+.db-LoginBackground {
+    min-height: 692px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    overflow: hidden
+}
+
+.db-LoginBackground-gridContainer {
+    display: grid;
+    grid-template-columns: [start] 1fr [left-gutter] repeat(16,86.6px) [left-gutter] 1fr [end];
+    grid-template-rows: [top] 1fr [top-gutter] repeat(8,64px) [bottom-gutter] 1fr [bottom];
+    justify-content: center;
+    margin: 0 -2%;
+    transform: rotate(-12deg) skew(-12deg)
+}
+
+.db-LoginBackgroundMobile {
+    position: relative
+}
+
+.db-LoginBackgroundMobile-background {
+    height: 760px;
+    overflow: hidden;
+    position: absolute;
+    transform: skewY(-12deg);
+    z-index: 0;
+    top: -428px;
+    left: -2%;
+    right: -2%
+}
+
+.db-LoginBackgroundMobile-stripe {
+    height: 64px;
+    position: relative;
+    width: 100%
+}
+
+.db-LoginBackgroundMobile-grid {
+    position: absolute;
+    top: 360px
+}

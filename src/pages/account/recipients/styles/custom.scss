@@ -1,0 +1,8 @@
+.modal-np.in .modal-np-dialog-custom {
+  transform: translate(0);
+}
+
+.modal-np .modal-np-dialog-custom {
+  transition: transform 0.3s ease-out;
+  transform: translateY(-25%);
+}

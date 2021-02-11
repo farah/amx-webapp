@@ -1,0 +1,54 @@
+.np-checkbox-button input[type="checkbox"] {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  margin: 0;
+}
+.np-checkbox-button input[type="checkbox"]:not(:disabled) {
+  cursor: pointer;
+}
+.np-checkbox-button .tw-checkbox-check {
+  pointer-events: none;
+}
+
+.checkbox .np-checkbox-button {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+}
+.checkbox .np-checkbox-button input[type="checkbox"],
+.checkbox .np-checkbox-button .tw-checkbox-button {
+  left: 0;
+  top: 0;
+}
+
+input[type="checkbox"]:checked + .tw-checkbox-button {
+  border-color: #00b9ff !important;
+  border-color: var(--color-control-accent, #00b9ff) !important;
+  background-color: #00b9ff;
+  background-color: var(--color-control-accent, #00b9ff);
+}
+
+.checkbox > label,
+.radio > label {
+  font-size: 1rem;
+  display: block;
+  cursor: pointer;
+  line-height: 24px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  color: #2e4369;
+  background-color: #fff;
+  border: 1px solid #d3d5d8;
+  border-radius: 3px;
+  transition: border 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+
+
+.tw-checkbox-button.checked .tw-checkbox-check,.tw-checkbox-button[checked] .tw-checkbox-check,input[type=checkbox]:checked+.tw-checkbox-button .tw-checkbox-check {
+    display: inline-block
+}
+

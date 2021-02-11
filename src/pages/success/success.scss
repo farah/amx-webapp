@@ -1,0 +1,386 @@
+
+.success-page {
+button:focus {
+    outline: 0
+}
+
+.overlay {
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.slide-carousel {
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.slide-carousel.noninstant {
+    height: inherit;
+    top: 100px
+}
+
+.slide.ng-enter {
+    margin-top: -20px;
+    transition: .5s;
+    opacity: 0
+}
+
+.slide.ng-enter-active {
+    margin-top: 0px;
+    opacity: 1
+}
+
+.non-instant-wrapper {
+    margin-top: -120px
+}
+
+.non-instant-wrapper .success-message {
+    margin-top: 60px
+}
+
+.non-instant-wrapper .success-actions {
+    margin-top: 80px;
+    margin-bottom: 100px
+}
+
+@media only screen and (max-width: 767px) {
+    .non-instant-wrapper .success-actions {
+        margin-bottom:40px
+    }
+}
+
+.tick-container {
+    position: relative;
+    margin: auto;
+    height: 136px;
+    width: 136px
+}
+
+.tick-circle {
+    opacity: 1;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 400
+}
+
+.gradial-container {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-130deg)
+}
+
+.gradial-arm {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto
+}
+
+.gradial-piece {
+    opacity: 0;
+    width: 100%;
+    height: 6px;
+    margin-top: 9px;
+    background-color: rgba(255,255,255,0.2);
+    animation: fadeIn 1s ease forwards
+}
+
+.gradial-number-container {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.gradial-number {
+    position: absolute;
+    opacity: 0;
+    font-size: 2em;
+    font-style: italic;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.progress {
+    background-color: rgba(255,255,255,0.2)
+}
+
+.progress-slide {
+    animation: slideWidth 20s cubic-bezier(.42, 0, 1, 1) forwards
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes slideWidth {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+.border-white {
+    border: 1px solid rgba(255,255,255,0.2)
+}
+
+.border-info {
+    border: 1px solid #00b9ff
+}
+
+.border-success {
+    border: 1px solid #2ED06E
+}
+
+.background-success {
+    background-color: #2ED06E
+}
+
+.logo {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    height: 24px;
+    width: 130px
+}
+
+.logo:hover {
+    opacity: .5
+}
+
+.icon {
+    cursor: pointer
+}
+
+.bodymovin-animation {
+    width: 168px;
+    height: 168px;
+    display: block;
+    margin: 13% auto auto
+}
+
+@media only screen and (max-width: 767px) {
+    .bodymovin-animation {
+        width:120px;
+        height: 120px
+    }
+}
+
+.hide-animation.ng-enter,.hide-animation.ng-leave {
+    max-height: 60px;
+    transition: max-height .5s linear,opacity .2s linear
+}
+
+.hide-animation.ng-enter,.hide-animation.ng-leave.ng-leave-active {
+    max-height: 0;
+    opacity: 0
+}
+
+.hide-animation.ng-leave,.hide-animation.ng-enter.ng-enter-active {
+    max-height: 60px;
+    opacity: 1
+}
+
+.invite-image {
+    margin: 13% auto auto;
+    height: 168px;
+    width: 208px;
+    background-image: url('https://daw291njkc3ao.cloudfront.net/instant/transfer-success/invite.svg')
+}
+
+.verification-image {
+    margin: 13% auto auto;
+    height: 168px;
+    width: 168px;
+    background-image: url('https://daw291njkc3ao.cloudfront.net/instant/transfer-success/verification.svg')
+}
+
+.globe {
+    width: 252px;
+    margin: 15px auto 10px
+}
+
+@media only screen and (max-width: 767px) {
+    .globe {
+        width:211px
+    }
+}
+
+.globe-animated {
+    width: 341px;
+    margin: -25px auto -35px;
+    position: relative
+}
+
+@media only screen and (max-width: 767px) {
+    .globe-animated {
+        width:211px
+    }
+}
+
+.speed-tip {
+    background: #2e4369;
+    padding: 18px 18px
+}
+
+.speed-tip strong {
+    display: block;
+    color: #2ED06E
+}
+
+.comparison-container {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    line-height: normal
+}
+
+@media only screen and (max-width: 767px) {
+    .comparison-container {
+        margin-right:16px;
+        margin-left: 16px
+    }
+}
+
+.comparison .globe {
+    width: 275px;
+    height: 260px;
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.comparison h1 {
+    font-size: 42px
+}
+
+@media only screen and (max-width: 767px) {
+    .comparison h1 {
+        font-size:28px
+    }
+}
+
+.comparison_success-text {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px
+}
+
+@media only screen and (max-width: 767px) {
+    .comparison_success-text {
+        font-size:16px
+    }
+}
+
+.comparison_success-text--highlight {
+    color: #2ED06E
+}
+
+.social-container {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 8px
+}
+
+.social-heading {
+    font-size: 16px;
+    line-height: 24px
+}
+
+.invite-program-description {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #d3d5d8
+}
+
+.invite-program-terms {
+    font-size: 12px;
+    line-height: 16px
+}
+
+.comparison-versus {
+    max-width: 568px;
+    border-radius: 3px;
+    background: #253655;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    color: #fff;
+    font-family: "Averta","Avenir W02","Avenir",Helvetica,Arial,sans-serif
+}
+
+.comparison-versus__header {
+    padding: 24px 32px;
+    text-align: center
+}
+
+.money-tracker-sharing-wrapper {
+    position: relative;
+    z-index: 1
+}
+
+.track-transfer-action {
+    position: relative;
+    z-index: 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

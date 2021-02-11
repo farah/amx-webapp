@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "amal-express"
+  },
+  "targets": {
+    "amal-express": {
+      "hosting": {
+        "backoffice": [
+          "amxadmin"
+        ]
+      }
+    }
+  }
+}

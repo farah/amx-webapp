@@ -1,0 +1,104 @@
+.tw-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.tw-icon-sm {
+  width: 16px;
+  height: 16px;
+  margin-bottom: -2px;
+}
+
+.tw-icon-md {
+  width: 24px;
+  height: 24px;
+}
+
+.tw-icon-lg {
+  width: 32px;
+  height: 32px;
+}
+
+.tw-icon-xl {
+  width: 40px;
+  height: 40px;
+}
+
+.tw-icon-xxl {
+  width: 48px;
+  height: 48px;
+}
+
+.circle .tw-icon {
+  height: 100%;
+}
+
+.close {
+  float: right;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #00b9ff;
+  text-decoration: none;
+}
+
+.close:focus,
+.close:hover {
+  color: #00a4df;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close:focus {
+  outline: thin dotted rgba(0, 0, 0, 0.5);
+  outline-offset: 2px;
+}
+
+.close:active {
+  color: #008ec0;
+}
+
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+
+.tw-flow-navigation__wrapper {
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 576px) {
+  .tw-flow-navigation__wrapper {
+    padding-bottom: 24px;
+  }
+}
+
+.tw-flow-navigation__stepper {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .tw-flow-navigation__stepper {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .tw-flow-navigation__stepper {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+.web-header__logo {
+  width: 136px;
+  height: 52px;
+  margin-top: -11px;
+}

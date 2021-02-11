@@ -1,0 +1,25 @@
+.modal-np.in .modal-np-dialog-custom {
+  transform: translate(0);
+}
+
+.modal-np .modal-np-dialog-custom {
+  transition: transform 0.3s ease-out;
+  transform: translateY(-25%);
+}
+
+.loader--xl {
+  margin-top: 69px;
+}
+
+form {
+  width: 100%;
+}
+
+.addNew {
+  padding-top: 16px;
+}
+
+.addSecretWord1 button {
+  margin-left: -33px;
+  margin-right: 13px;
+}

@@ -1,0 +1,25 @@
+steps:
+  - name: "gcr.io/kaniko-project/executor:latest"
+    args:
+      - --destination=gcr.io/$PROJECT_ID/firebase
+      - --cache=true
+      - --cache-ttl=72h
+
+  - name: gcr.io/cloud-builders/yarn
+    args: ["install"]
+
+  - name: gcr.io/cloud-builders/yarn
+    args: ["run", "build"]
+
+  - name: gcr.io/$PROJECT_ID/firebase
+    args: ["use", "amal-express"]
+    secretEnv: ["FIREBASE_TOKEN"]
+
+  - name: gcr.io/$PROJECT_ID/firebase
+    args: ["deploy"]
+    secretEnv: ["FIREBASE_TOKEN"]
+
+secrets:
+  - kmsKeyName: "projects/amal-express/locations/global/keyRings/firebase-token/cryptoKeys/firebase-token"
+    secretEnv:
+      FIREBASE_TOKEN: "CiQAKtVwp8rtbziakNRLrk/1vWH2jTEssXHNpmq42l1rTHvY8zMSkAEANVYBnpLzFuZSAgpYIlHgozz6mk0yZhOm5RnWcgU+O/OaCQJkGyv+foGfPP8yXZyzM+UaVzKv+snOZkmDgaoeODJS+kcHP9aDcguMSdMLGEBTFx3ndqOPfsSp7GefvQbOPYmtjjTSzISGSSlGkqlfknYoBcvWqw0NnaX1iGXSMt3sDTnZMnK36PJ0LPlKSlE="

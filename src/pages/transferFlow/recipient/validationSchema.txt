@@ -1,0 +1,37 @@
+import * as Yup from "yup";
+
+const validationSchema = Yup.object().shape({
+  firstName: Yup.string()
+  .test("letters", "Name must only contain letters", value => {
+    return /^[A-Za-z]+$/.test(value);
+  })
+    .min(3, "First name is too short")
+    .max(15, "First name is too short")
+    .required("First name is required"),
+  middleName: Yup.string()
+  .test("letters", "Name must only contain letters", value => {
+    return /^[A-Za-z]+$/.test(value);
+  })
+    .min(3, "Middle name is too short")
+    .max(15, "Middle name is too short"),
+  lastName: Yup.string()
+  .test("letters", "Name must only contain letters", value => {
+    return /^[A-Za-z]+$/.test(value);
+  })
+    .min(3, "Last name is too short")
+    .max(15, "Last name is too short")
+    .required("Last name is required"),
+  city: Yup.string()
+  .test("letters", "Name must only contain letters", value => {
+    return /^[A-Za-z]+$/.test(value);
+  })
+    .min(3, "City is too short")
+    .max(15, "City is too long")
+    .required("City is required"),
+  mobile: Yup.string()
+  .min(5, "First name is too short")
+  .required("Mobile is required"),
+  state: Yup.string().required("State is required")
+});
+
+export default validationSchema;

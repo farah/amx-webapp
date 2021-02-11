@@ -1,0 +1,53 @@
+"use strict";
+exports.__esModule = true;
+function ReceiverItem(_a) {
+    var receiver = _a.receiver, selectedReceiverId = _a.selectedReceiverId, onSelectReceiver = _a.onSelectReceiver, onDeleteReceiver = _a.onDeleteReceiver;
+    var activeClass = "TrackingItem-module_active__383Xc TrackingItem-module_success__35RX1";
+    var isActive = selectedReceiverId === receiver.id;
+    return (React.createElement(React.Fragment, null,
+        React.createElement("li", { className: "tw-card list-group-item p-a-0 account-card " + (isActive ? "active" : "") },
+            React.createElement("div", { onClick: onSelectReceiver, className: "p-a-panel tw-card__panel", role: "button" },
+                React.createElement("div", { className: "media" },
+                    React.createElement("div", { className: "media-left" },
+                        React.createElement("div", { className: "circle circle-sm text-primary" },
+                            React.createElement("div", { className: "tw-badge tw-badge-border-light tw-badge-sm" },
+                                React.createElement("div", { className: "tw-badge__children" },
+                                    React.createElement("div", { className: "tw-avatar tw-avatar--md tw-avatar--initials tw-avatar--light" },
+                                        React.createElement("div", { className: "tw-avatar__content", style: { backgroundColor: "white" } },
+                                            React.createElement("small", null, "AN")))),
+                                React.createElement("div", { className: "tw-badge__content" },
+                                    React.createElement("img", { src: "https://transferwise.com/public-resources/assets/flags/square/usd.svg", alt: "" }))))),
+                    React.createElement("div", { className: "media-body" },
+                        React.createElement("div", { className: "h5" },
+                            receiver.firstName,
+                            " ",
+                            receiver.lastName),
+                        React.createElement("div", { className: "decision__content" },
+                            React.createElement("span", { className: "list-group-item-text small text-max-width" },
+                                React.createElement("span", null, receiver.city)))),
+                    React.createElement("div", { className: "media-right" },
+                        React.createElement("span", { className: "tw-icon tw-icon-chevron-up tw-chevron chevron-color bottom", "aria-hidden": "true", role: "presentation" },
+                            React.createElement("svg", { width: "16", height: "16", fill: "currentColor" },
+                                React.createElement("path", { "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M8 4l-6.6 6.653L2.537 11.8 8 6.293l5.463 5.507 1.137-1.147L8 4z" })))))),
+            isActive && (React.createElement("div", { className: "p-l-panel p-r-panel p-b-panel tw-card__content" },
+                React.createElement("div", { className: "media" },
+                    React.createElement("div", { className: "media-left" },
+                        React.createElement("div", { className: "circle circle-sm circle-inverse circle-responsive invisible" })),
+                    React.createElement("div", { className: "media-body" },
+                        React.createElement("hr", { className: "m-t-0 hidden-xs hidden-sm" }),
+                        React.createElement("div", null,
+                            React.createElement("dl", { className: "tw-definition-list d-flex  tw-definition-list--columns flex-column flex-row--sm" },
+                                React.createElement("div", { className: "tw-definition-list__item" },
+                                    React.createElement("dt", null, "City"),
+                                    React.createElement("dd", { className: "" }, receiver.city)),
+                                React.createElement("div", { className: "tw-definition-list__item" },
+                                    React.createElement("dt", null, "Mobile"),
+                                    React.createElement("dd", { className: "" },
+                                        React.createElement("span", null, receiver.mobile)))),
+                            React.createElement("hr", { className: "hidden-xs hidden-sm hidden-md" }),
+                            React.createElement("div", { className: "btn-toolbar btn-toolbar-lg" },
+                                React.createElement("button", { type: "button", className: "btn btn-md np-btn np-btn-md btn-success" }, "Send money"),
+                                React.createElement("span", { className: "pull-lg-right" },
+                                    React.createElement("button", { onClick: onDeleteReceiver, type: "button", className: "btn btn-md np-btn np-btn-md btn-danger" }, "Delete recipient")))))))))));
+}
+exports["default"] = ReceiverItem;

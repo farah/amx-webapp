@@ -1,0 +1,78 @@
+
+
+
+.common-Link {
+  color: #6772e5;
+  font-weight: 500;
+  -webkit-transition: color .1s ease;
+  transition: color .1s ease;
+  cursor: pointer
+}
+
+.keyboard-navigation .common-Link:focus {
+  outline: none;
+  text-decoration: underline;
+  text-underline-position: under
+}
+
+.common-Link:focus,.common-Link:hover {
+  color: #32325d
+}
+
+.common-Link:active {
+  color: #000
+}
+
+.common-Link--arrow:after {
+  font: normal 16px StripeIcons;
+  content: "\2192";
+  padding-left: 5px
+}
+
+.common-Link--arrowL:before {
+  content: "\2192";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: 5px
+}
+
+.common-Link--arrowL:before,.common-Link--download:before {
+  display: inline-block;
+  font: normal 16px StripeIcons;
+  vertical-align: -2px
+}
+
+.common-Link--download:before {
+  content: "\279C";
+  margin-right: 2px;
+  -webkit-transform: rotate(90deg) scale(.9);
+  transform: rotate(90deg) scale(.9)
+}
+
+.common-UppercaseText.common-Link--arrow:after {
+  content: "\279C"
+}
+
+.common-InvertedText .common-BodyTitle,.common-InvertedText .common-PageTitle,.common-InvertedText .common-SectionTitle,.common-InvertedText .common-SectionTitleHighlight,.common-InvertedText .common-UppercaseText,.common-InvertedText .common-UppercaseTitle {
+  color: #fff
+}
+
+.common-InvertedText .common-IntroText {
+  color: #c4f0ff
+}
+
+.common-InvertedText .common-BodyText {
+  color: #9cdbff
+}
+
+.common-InvertedText .common-Link,.common-Link--white {
+  color: #fff
+}
+
+.common-InvertedText .common-Link:focus,.common-InvertedText .common-Link:hover,.common-Link--white:focus,.common-Link--white:hover {
+  color: #c4f0ff
+}
+
+.common-InvertedText .common-Link:active,.common-Link--white:active {
+  color: #87bbfd
+}

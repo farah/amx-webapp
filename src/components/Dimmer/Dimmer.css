@@ -1,0 +1,38 @@
+.no-scroll {
+  overflow: hidden;
+}
+.dimmer {
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.35s cubic-bezier(0, 0.94, 0.62, 1);
+  background: rgba(55, 81, 126, 0);
+}
+.dimmer--scrollable {
+  overflow-y: auto;
+}
+.dimmer.dimmer--enter-done {
+  background: rgba(55, 81, 126, 0.6);
+}
+.dimmer.dimmer--exit-active {
+  background: rgba(55, 81, 126, 0);
+}
+.dimmer.dimmer--enter-fade > *,
+.dimmer.dimmer--exit-fade > * {
+  transition: opacity 0.35s cubic-bezier(0, 0.94, 0.62, 1);
+}
+.dimmer.dimmer--exit-fade > * {
+  opacity: 1;
+}
+.dimmer.dimmer--enter-fade > *,
+.dimmer.dimmer--exit.dimmer--exit-fade > * {
+  opacity: 0;
+}
+.dimmer.dimmer--enter-done.dimmer--enter-fade > * {
+  opacity: 1;
+}

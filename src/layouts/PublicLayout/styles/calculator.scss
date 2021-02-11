@@ -1,0 +1,26 @@
+
+
+
+.resource-list li {
+  display: flex;
+  margin-bottom: 32px;
+  max-width: 485px
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+.material-icons.mdc-text-field__icon {
+  bottom: 12px !important
+}
+@font-face {
+  font-family: TransferWise-IconFont !important;
+  font-weight: 100;
+  src: url("https://transferwise.com/angular-apps/v/transferFlow/1.1.1-c16837/assets/fonts/TransferWise-IconFont.ttf?zg07su") format("ttf");
+}
+.icon-collapse:before {
+  content: "\e90f";
+}

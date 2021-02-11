@@ -1,0 +1,179 @@
+.style1 {
+  max-width: 448px;
+width: 100%;
+z-index: 1;
+transform: translateX(0px);
+display: grid;
+position: relative;
+--auto-translate-x:0px;
+--auto-translate-y:0px;
+--auto-scale-x:1;
+--auto-scale-y:1;
+}
+
+.style2 {
+  background: white;
+border-radius: 4px;
+box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
+rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0);
+transform-origin: 0% 0%;
+width: calc(100% * var(--auto-scale-x));
+height: calc(100% * var(--auto-scale-y));
+will-change: transform,
+width,
+height;
+box-sizing: border-box;
+position: absolute;
+left: 0px;
+top: 0px;
+pointer-events: none;
+}
+
+.style3 {
+  transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0) scale(var(--auto-scale-x), var(--auto-scale-y));
+transform-origin: 0% 0%;
+will-change: transform;
+margin-top: -1px;
+margin-left: -1px;
+height: calc(100% + 1px);
+width: calc(100% + 1px);
+}
+
+.style4 {
+  background-color: rgb(255, 255, 255);
+box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.style5 {
+  --auto-translate-x:0px;
+--auto-translate-y:0px;
+--auto-scale-x:1;
+--auto-scale-y:1;
+transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0) scale(var(--auto-scale-x), var(--auto-scale-y));
+transform-origin: 0% 0%;
+will-change: transform;
+width: 100%;
+}
+
+.style6 {
+  background-color: rgb(255, 255, 255);
+box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.style7 {
+--auto-translate-x:0px;
+--auto-translate-y:0px;
+--auto-scale-x:1;
+--auto-scale-y:1;
+transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0) scale(var(--auto-scale-x), var(--auto-scale-y));
+transform-origin: 0% 0%;
+will-change: transform;
+}
+
+.style9 {
+  background-color: rgb(84, 105, 212);
+box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+rgb(84, 105, 212) 0px 0px 0px 1px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(60, 66, 87, 0.12) 0px 2px 5px 0px;
+}
+
+
+////@extend
+
+
+
+.styles1 {
+  max-width: 448px;
+width: 100%;
+z-index: 1;
+transform: translateX(0px);
+display: grid;
+position: relative;
+--auto-translate-x:0px;
+--auto-translate-y:0px;
+--auto-scale-x:1;
+--auto-scale-y:1;
+}
+
+.styles2 {
+  transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0) scale(var(--auto-scale-x), var(--auto-scale-y));
+transform-origin: 0% 0%;
+will-change: transform;
+margin-top: -1px;
+margin-left: -1px;
+height: calc(100% + 1px);
+width: calc(100% + 1px);
+}
+
+
+.styles3 {
+  transform: scale(calc(1 / var(--auto-scale-x)), calc(1 / var(--auto-scale-y)));
+transform-origin: 0% 0%;
+width: 100%;
+height: 100%;
+will-change: transform;
+display: grid;
+box-sizing: border-box;
+}
+
+.styles4 {
+  --auto-translate-x:0px;
+--auto-translate-y:0px;
+--auto-scale-x:1;
+--auto-scale-y:1;
+transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0) scale(var(--auto-scale-x), var(--auto-scale-y));
+transform-origin: 0% 0%;
+will-change: transform;
+}
+
+.loginFormStyle {
+  --auto-translate-x:0px;
+--auto-translate-y:0px;
+--auto-scale-x:1;
+--auto-scale-y:1;
+transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0) scale(var(--auto-scale-x), var(--auto-scale-y));
+transform-origin: 0% 0%;
+will-change: transform;
+width: 100%;
+}
+
+.continueButtonStyle1 {
+  --auto-translate-x:0px;
+--auto-translate-y:0px;
+--auto-scale-x:1;
+--auto-scale-y:1;
+transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0) scale(var(--auto-scale-x), var(--auto-scale-y));
+transform-origin: 0% 0%;
+will-change: transform;
+}
+.passwordInputField1 {
+  --auto-translate-x:0px;
+--auto-translate-y:0px;
+--auto-scale-x:1;
+--auto-scale-y:1;
+transform: translate3d(var(--auto-translate-x), var(--auto-translate-y), 0) scale(var(--auto-scale-x), var(--auto-scale-y));
+transform-origin: 0% 0%;
+will-change: transform;
+width: 100%;
+}
+
+.db-Login-fields button {
+  width: 100%;
+}

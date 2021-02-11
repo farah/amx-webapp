@@ -1,0 +1,166 @@
+
+.tile {
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f2f5f7;
+    border: 1px solid #e2e6e8;
+    border-radius: 3px;
+    outline: 0;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out
+}
+
+.tile:focus:not(.tile-disabled),.tile:hover:not(.tile-disabled) {
+    border-color: #00b9ff
+}
+
+.tile:active:not(.tile-disabled) {
+    background-color: #e2e6e8;
+    border-color: #00a4df
+}
+
+.tile p {
+    margin-bottom: 0
+}
+
+.tile .circle {
+    margin-bottom: 16px;
+    color: #00b9ff
+}
+
+.tile .tile-ribbon-benefit {
+    position: absolute;
+    top: 24px;
+    right: -43px;
+    width: 160px;
+    color: #fff;
+    text-align: center;
+    background-color: #00b9ff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.tile .tile-icon {
+    float: left;
+    margin-right: 16px
+}
+
+.tile .tile-text {
+    overflow-y: hidden;
+    text-align: left
+}
+
+.tile-disabled {
+    color: #a8aaac;
+    cursor: not-allowed;
+    background-color: #fff;
+    border: 1px solid #e2e6e8
+}
+
+.tile-disabled .circle,.tile-disabled .glyphicon,.tile-disabled .icon,.tile-disabled h5 {
+    color: #a8aaac
+}
+
+.tile-inverse {
+    background-color: #fff;
+    border-color: #fff
+}
+
+.tile-row {
+    margin-right: -12px;
+    margin-left: -12px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.tile-row,.tile-row>[class*=col-] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media(min-width: 576px) {
+    .tile {
+        padding:24px
+    }
+
+    .tile .tile-icon {
+        float: none;
+        margin-right: auto
+    }
+
+    .tile .tile-text {
+        text-align: center
+    }
+
+    .tile .tile-ribbon-benefit {
+        left: -43px;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+}
+
+@media(min-width: 992px) {
+    .tile {
+        padding:32px
+    }
+}
+
+@media(max-width: 575px) {
+    .tile-text .h5,.tile-text h5 {
+        padding-right:64px
+    }
+
+    .tile-text p {
+        padding-right: 32px
+    }
+
+    .tile-icon .circle {
+        margin-bottom: 0
+    }
+}
+
+.tile-success .icon,.tile-success a {
+    color: #1b7940
+}
+
+.tile-success:hover:not(.tile-disabled) {
+    border-color: #2ed06e
+}
+
+.tile-info .icon,.tile-info a {
+    color: #00a4df
+}
+
+.tile-info:hover:not(.tile-disabled) {
+    border-color: #00b9ff
+}
+
+.tile-warning .icon,.tile-warning a {
+    color: #9e5f00
+}
+
+.tile-warning:hover:not(.tile-disabled) {
+    border-color: #ffa600
+}
+
+.tile-danger .icon,.tile-danger a {
+    color: #c22e2e
+}
+
+.tile-danger:hover:not(.tile-disabled) {
+    border-color: #f53636
+}

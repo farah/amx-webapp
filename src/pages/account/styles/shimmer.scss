@@ -1,0 +1,82 @@
+
+
+@media(max-width: 991px) {
+    .shimmer-nav {
+        background-color:#4b628b;
+        background-image: linear-gradient( to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.1) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 100% );
+        animation-delay: .2s
+    }
+}
+
+@media(min-width: 992px) {
+    .shimmer-nav {
+        background-color:#e3e7e9;
+        background-image: linear-gradient( to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.4) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 100% );
+        animation-delay: .2s
+    }
+}
+
+.list-item {
+    margin-top: 0;
+    border-top: 1px solid #e2e6e8;
+    list-style: none
+}
+
+.list-detail {
+    margin-top: 9px
+}
+
+.skew-text {
+    height: 10px;
+    width: 144px;
+    transform: skew(-23.5deg);
+    display: block;
+    margin-bottom: 4px
+}
+
+.skew-text-small {
+    height: 8px;
+    width: 88px;
+    transform: skew(-23.5deg);
+    display: inline-block
+}
+
+@media only screen and (max-width: 575px) {
+    .shimmer-navbar-header {
+        margin-top:14px
+    }
+
+    .list-detail {
+        margin-top: 8px
+    }
+
+    .text {
+        height: 8px;
+        width: 72px;
+        margin-bottom: 0
+    }
+
+    .text-small {
+        height: 6px;
+        width: 44px
+    }
+
+    .circle-responsive {
+        border-radius: 50%;
+        margin-top: 8px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .balances-overview .text {
+        margin-top:8px
+    }
+}
+
+.shimmer-navbar-title {
+    overflow-x: visible
+}
+
+.shimmer-navbar-header {
+    margin-top: 10px
+}

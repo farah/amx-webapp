@@ -1,0 +1,39 @@
+
+
+.tw-transfer-flow-view {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  &.enter, &.exit {
+    transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1);
+  }
+
+  &.enter {
+    transform: translateX(-100%);
+
+    &.enter-active {
+      transform: none;
+    }
+  }
+}
+
+.tw-transfer-flow-view--moving-forward.enter, .tw-transfer-flow-view.exit.exit-active {
+  transform: translateX(100%);
+}
+
+.tw-transfer-flow-view--moving-forward {
+  &.enter.enter-active {
+    transform: none;
+  }
+
+  &.exit.exit-active {
+    transform: translateX(-100%);
+  }
+}
+
+.tw-transfer-flow-view--first-step {
+  &.enter, &.exit {
+    transition: none;
+  }
+}

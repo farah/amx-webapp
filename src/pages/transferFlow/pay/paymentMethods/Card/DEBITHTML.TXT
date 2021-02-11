@@ -1,0 +1,263 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <title>Card Form</title>
+    <script src="polyfill.js"></script>
+    <script src="./vars.js?latest"></script>
+    <link href="./static/css/2.ffd82418.chunk.css" rel="stylesheet" />
+    <link href="./static/css/main.decf59e5.chunk.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root">
+      <div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-10">
+            <h2>Pay with your card</h2>
+            <a href="#">Use a new card</a> or, <a href="#">Pay another way</a>
+          </div>
+        </div>
+        <div class="">
+          <div class="m-t-2"></div>
+          <div class="">
+            <div class="row">
+              <div class="col-xs-12 col-sm-10">
+                <label data-testid="saved-card-0" class="media decision"
+                  ><div class="media-left">
+                    <div class="circle-sm text-primary"><div class="saved-card-form-icon icon-MC"></div></div>
+                  </div>
+                  <div class="media-body">
+                    <h5><div class="col-xs-12">AUD Mastercard Debit</div></h5>
+                    <span class="col-xs-12 m-t-1"
+                      >Last four <strong>9338</strong> Expiry date <strong>04 / 23</strong></span
+                    >
+                    <div class="col-xs-10 col-sm-8 col-lg-6">
+                      <div class="icon-container">
+                        <input
+                          type="text"
+                          inputmode="numeric"
+                          class="form-control m-t-1"
+                          name="cvc"
+                          placeholder="CVV / CVC"
+                          maxlength="3"
+                          autocomplete="off"
+                          value=""
+                        />
+                        <div data-testid="icon-card-back" class="card-form-icon icon-card-back"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media-right" id="saved-card-0">
+                    <input type="radio" class="sr-only" value="" /><button
+                      type="button"
+                      class="tw-radio-button checked"
+                      aria-pressed="true"
+                      tabindex="-1"
+                    >
+                      <span class="tw-radio-check"></span>
+                    </button></div
+                ></label>
+                <div class="m-b-1"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-10">
+                <button
+                  type="button"
+                  class="btn btn-md np-btn np-btn-md btn-success btn-block np-btn-block"
+                  id="pay-button"
+                  data-testid="pay-button"
+                >
+                  Pay 1,005.47 AUD
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hidden">
+            <div class="row">
+              <div class="col-xs-12 col-sm-10">
+                <div class="form-group">
+                  <label class="control-label" for="card-number-input">Card number</label>
+                  <div class="icon-container">
+                    <input
+                      type="text"
+                      inputmode="numeric"
+                      class="form-control"
+                      id="card-number-input"
+                      name="card-number"
+                      maxlength="23"
+                      autocomplete="off"
+                      value=""
+                    />
+                    <div data-testid="icon-GENERIC" class="card-form-icon icon-GENERIC"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-5">
+                <div class="form-group">
+                  <label class="control-label" for="expiry-date">Expiry date (MM / YY)</label
+                  ><input
+                    type="text"
+                    inputmode="numeric"
+                    class="form-control"
+                    id="expiry-date"
+                    name="expiry-date"
+                    autocomplete="off"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="form-group">
+                  <label class="control-label" for="cvc">CVV / CVC</label>
+                  <div class="icon-container">
+                    <input
+                      type="text"
+                      inputmode="numeric"
+                      class="form-control"
+                      id="cvc"
+                      name="cvc"
+                      placeholder=""
+                      maxlength="3"
+                      autocomplete="off"
+                      value=""
+                    />
+                    <div data-testid="icon-card-back" class="card-form-icon icon-card-back"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-10">
+                <div class=""></div>
+                <div id="save-card-flag" class="checkbox">
+                  <label
+                    >Save card for future payments<button
+                      type="button"
+                      class="tw-checkbox-button checked"
+                      aria-pressed="true"
+                    >
+                      <span class="tw-checkbox-check"></span></button
+                  ></label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class=" m-t-2 col-xs-12 col-sm-10">
+                <button
+                  type="button"
+                  class="btn btn-md np-btn np-btn-md btn-success btn-block np-btn-block"
+                  id="pay-button"
+                  data-testid="pay-button"
+                >
+                  Pay 1,005.47 AUD
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-10">
+              <div class="m-t-2">
+                <div class="review-details-card">
+                  <p class="m-b-1 review-element">
+                    <span class="review-element-name">Total fee</span>
+                    <span class="review-element-value text-primary">- 5.47 AUD</span>
+                  </p>
+                  <p class="m-b-1 review-element">
+                    <span class="review-element-name">Recipient gets</span>
+                    <span class="review-element-value text-primary">1,000 AUD</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      !(function(e) {
+        function r(r) {
+          for (var n, f, l = r[0], a = r[1], i = r[2], p = 0, s = []; p < l.length; p++)
+            (f = l[p]), Object.prototype.hasOwnProperty.call(o, f) && o[f] && s.push(o[f][0]), (o[f] = 0);
+          for (n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
+          for (c && c(r); s.length; ) s.shift()();
+          return u.push.apply(u, i || []), t();
+        }
+        function t() {
+          for (var e, r = 0; r < u.length; r++) {
+            for (var t = u[r], n = !0, l = 1; l < t.length; l++) {
+              var a = t[l];
+              0 !== o[a] && (n = !1);
+            }
+            n && (u.splice(r--, 1), (e = f((f.s = t[0]))));
+          }
+          return e;
+        }
+        var n = {},
+          o = { 1: 0 },
+          u = [];
+        function f(r) {
+          if (n[r]) return n[r].exports;
+          var t = (n[r] = { i: r, l: !1, exports: {} });
+          return e[r].call(t.exports, t, t.exports, f), (t.l = !0), t.exports;
+        }
+        (f.m = e),
+          (f.c = n),
+          (f.d = function(e, r, t) {
+            f.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t });
+          }),
+          (f.r = function(e) {
+            "undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(e, "__esModule", { value: !0 });
+          }),
+          (f.t = function(e, r) {
+            if ((1 & r && (e = f(e)), 8 & r)) return e;
+            if (4 & r && "object" == typeof e && e && e.__esModule) return e;
+            var t = Object.create(null);
+            if (
+              (f.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e)
+            )
+              for (var n in e)
+                f.d(
+                  t,
+                  n,
+                  function(r) {
+                    return e[r];
+                  }.bind(null, n)
+                );
+            return t;
+          }),
+          (f.n = function(e) {
+            var r =
+              e && e.__esModule
+                ? function() {
+                    return e.default;
+                  }
+                : function() {
+                    return e;
+                  };
+            return f.d(r, "a", r), r;
+          }),
+          (f.o = function(e, r) {
+            return Object.prototype.hasOwnProperty.call(e, r);
+          }),
+          (f.p = "./");
+        var l = (this["webpackJsonpcard-form"] = this["webpackJsonpcard-form"] || []),
+          a = l.push.bind(l);
+        (l.push = r), (l = l.slice());
+        for (var i = 0; i < l.length; i++) r(l[i]);
+        var c = a;
+        t();
+      })([]);
+    </script>
+    <script src="./static/js/2.bc3d098f.chunk.js"></script>
+    <script src="./static/js/main.a06ca540.chunk.js"></script>
+    <div style="clear: both; display: block; height: 0px;"></div>
+  </body>
+</html>
